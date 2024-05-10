@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>跳一跳网页版</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="https://static.tang-xinli.com/gh/zj19941113/You_Jump_I_Jump/source/i.png">
+  <style>@font-face{font-family: 'numjump';src : url('source/num.ttf');} body{ margin: 0; } #canvas-frame { border: none; cursor: pointer; height: 600px; -webkit-touch-callout:none; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; } #gameBegin { position :absolute; top :0px; width: 100%; height: 600px; background-color:rgba(0,0,0,0.4); z-index: 9; color: white; display: flex; flex-direction: column; align-items:center;}</style>
+</head>
+<script src="https://static.tang-xinli.com/gh/zj19941113/You_Jump_I_Jump/build/three.js"></script>
+<script src="https://static.tang-xinli.com/gh/zj19941113/You_Jump_I_Jump/js/WebGL.js"></script>
+<script src="https://static.tang-xinli.com/gh/zj19941113/You_Jump_I_Jump/js/tween.min.js"></script>
+<script src="https://static.tang-xinli.com/gh/onlinewwj/WXjump@8cb1ca578e4b673be06641b9f0061508343b7839/i.js"></script>
+<body onload="threeStart();">
+<div id="canvas-frame"></div>
+<div id="point" style="display:none"> 0 </div>
+<div id="gameBegin">
+  <img style="margin-top:95px;width:250px;height:60px;" src="https://static.tang-xinli.com/gh/zj19941113/You_Jump_I_Jump/source/title.png">
+  <img style="margin-top:220px;width:200px;height:80px;" src="https://static.tang-xinli.com/gh/onlinewwj/WXjump@main/source/play.png" onclick="play();">
+</div>
+</body>
+</html>
